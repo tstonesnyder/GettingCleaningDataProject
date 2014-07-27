@@ -1,4 +1,4 @@
-#Code Book
+#CodeBook.md
 
 ###Source of the Data
 The data used to generate the files in this repository was provided through the "Getting and Cleaning Data" course on Coursera.  It was downloaded from 
@@ -16,23 +16,23 @@ The files X_test.txt and X_train.txt contain the data for the test and training 
 >  
 >These signals were used to estimate variables of the feature vector for each pattern:  
 > '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-> tBodyAcc-XYZ
-> tGravityAcc-XYZ
-> tBodyAccJerk-XYZ
-> tBodyGyro-XYZ
-> tBodyGyroJerk-XYZ
-> tBodyAccMag
-> tGravityAccMag
-> tBodyAccJerkMag
->tBodyGyroMag
->tBodyGyroJerkMag
->fBodyAcc-XYZ
->fBodyAccJerk-XYZ
->fBodyGyro-XYZ
->fBodyAccMag
->fBodyAccJerkMag
->fBodyGyroMag
->fBodyGyroJerkMag
+> tBodyAcc-XYZ  
+> tGravityAcc-XYZ  
+> tBodyAccJerk-XYZ  
+> tBodyGyro-XYZ  
+> tBodyGyroJerk-XYZ  
+> tBodyAccMag  
+> tGravityAccMag  
+> tBodyAccJerkMag  
+>tBodyGyroMag  
+>tBodyGyroJerkMag  
+>fBodyAcc-XYZ  
+>fBodyAccJerk-XYZ  
+>fBodyGyro-XYZ  
+>fBodyAccMag  
+>fBodyAccJerkMag  
+>fBodyGyroMag  
+>fBodyGyroJerkMag  
 >
 >The set of variables that were estimated from these signals are: 
 >mean(): Mean value
@@ -79,9 +79,9 @@ The file tidydata.csv contains the following columns of data:
   - walking
   - walking upstairs
   - walking downstairs
-  -- sitting
-  -- standing
-  -- laying
+  - sitting
+  - standing
+  - laying
 
 The remaining 66 columns contain measurements that range from -1 to 1 (exclusive). They contain the mean of the related column in the full dataset, calculated by individual subject and activity. Columns labels ending in "X", "Y", or "Z" contain data related to 3-axial signals in the X, Y, or Z direction. These remaining columns are:
 
