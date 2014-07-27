@@ -5,7 +5,7 @@ The data used to generate the files in this repository was provided through the 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip on 7/27/2014.  It represents data collected from the accelerometers on Samsung Galaxy S smartphones. A full description is available at the site where the data was obtained: 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-##Description of the Raw Data
+###Description of the Raw Data
 The files X_test.txt and X_train.txt contain the data for the test and training sets, respectively.  The variable names (column headings) that apply to both of these datasets can be found in features.txt. The file features_info.txt contains further information about this data. I excerpt some of that information below:
 
 >The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -16,14 +16,14 @@ The files X_test.txt and X_train.txt contain the data for the test and training 
 >  
 >These signals were used to estimate variables of the feature vector for each pattern:  
 > '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
->tBodyAcc-XYZ
->tGravityAcc-XYZ
->tBodyAccJerk-XYZ
->tBodyGyro-XYZ
->tBodyGyroJerk-XYZ
->tBodyAccMag
->tGravityAccMag
->tBodyAccJerkMag
+> tBodyAcc-XYZ
+> tGravityAcc-XYZ
+> tBodyAccJerk-XYZ
+> tBodyGyro-XYZ
+> tBodyGyroJerk-XYZ
+> tBodyAccMag
+> tGravityAccMag
+> tBodyAccJerkMag
 >tBodyGyroMag
 >tBodyGyroJerkMag
 >fBodyAcc-XYZ
@@ -70,20 +70,20 @@ The subject numbers that correspond to each test and training set observation ca
 The file run_analysis.R is an R script that cleans and processes the raw data to create an output file (tidydata.csv). See the file README.md for details on the steps this script performs.
 
 
-##Columns in tidydata.csv
+###Columns in tidydata.csv
 The file tidydata.csv contains the following columns of data:
 
 - subjectID = A number from 1 to 30 identifying the subject to whom the measurements apply
 
 - activity = Text indicating the activity the subject was engaged in when the measurements were recorded.  Can be one of the following 6 text values:
-    walking
-    walking upstairs
-    walking downstairs
-    sitting
-    standing
-    laying
+  - walking
+  - walking upstairs
+  - walking downstairs
+  -- sitting
+  -- standing
+  -- laying
 
-The remaining 66 columns contain measurements that range from -1 to 1 (exclusive). They contain the mean of the related column in the full dataset, calculated by individual subject and activity. Columns labels ending in "X", "Y", or "Z" contain data related to 3-axial signals in the X, Y, or Z direction. The remaining columns are:
+The remaining 66 columns contain measurements that range from -1 to 1 (exclusive). They contain the mean of the related column in the full dataset, calculated by individual subject and activity. Columns labels ending in "X", "Y", or "Z" contain data related to 3-axial signals in the X, Y, or Z direction. These remaining columns are:
 
 - timeBodyAccMeanX
 - timeBodyAccMeanY
